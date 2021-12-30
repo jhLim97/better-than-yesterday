@@ -28,4 +28,21 @@ describe("example counter app", () => {
           .should("eq", String(preValue + 1));
       });
   });
+
+  it("- 버튼을 클릭 시 count가 1감소한다.", () => {
+    // + 버튼을 클릭해서 1로 만든다.
+    // 먼저 기존 값을 가져오고,
+    // - 버튼을 클릭한 다음에
+    // 변화된 값이 기존값 - 1인지 체크
+    cy.get(".increase-btn").click();
+    cy.get("#value")
+      .invoke("text")
+      .then((value) => {
+        const preValue = Number(value);
+        cy.get(".decrease-btn").click();
+        cy.get("#value")
+          .invoke("text")
+          .should("eq", String(preValue - 1));
+      });
+  });
 });
