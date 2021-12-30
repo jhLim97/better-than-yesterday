@@ -3,7 +3,7 @@
 사용자 중심의 흐름에서 검증이 가능한 테스트를 의미함
 ### branch : test/cypress 
 +, - 버튼으로 수의 증감 기능을 제공하는 카운터앱에 대한 테스트
-### branch : test/cypress-
+### branch : test/cypress-calculator
 계산 관련 기능들을 제공하는 계산기앱에 대한 테스트
 
 ### 참고자료
