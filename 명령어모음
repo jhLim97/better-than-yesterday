@@ -1,0 +1,7 @@
+참고자료 : https://docs.cypress.io/guides/getting-started
+
+// 패키지 설치
+npm install cypress --save-dev
+
+// cypress를 열기위한 명령어 (예제 문서들 포함)
+./node_modules/.bin/cypress open
